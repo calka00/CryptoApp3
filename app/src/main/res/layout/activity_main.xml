@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_height="60dp"
+        android:layout_width="200dp"
+        android:layout_marginTop="900px"
+        android:text="Zamień na PLN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/listResult"
+        android:background="@drawable/button"
+        android:textColor="#59F8E8"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200px"
+        android:textAlignment="center"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="4.08"
+        android:layout_marginTop="800px"
+        android:focusedByDefault="false"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/listResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/listResult" />
+
+    <ListView
+        android:id="@+id/listResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="700px"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450px"
+        android:text="Cena dolara:"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listResult" />
+</androidx.constraintlayout.widget.ConstraintLayout>
